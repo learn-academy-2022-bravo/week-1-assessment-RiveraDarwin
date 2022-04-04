@@ -8,12 +8,12 @@
 
 
 // Set one:
-// const fruit1 = "apple"
-// const fruit2 = "banana"
+const fruit1 = "apple"
+const fruit2 = "banana"
 
-// Set two:
-// const fruit3 = "cherry"
-// const fruit4 = "kiwi"
+//Set two:
+const fruit3 = "cherry"
+const fruit4 = "kiwi"
 
 const moreChar = (strOne, strTwo) => {
     if(strOne > strTwo){
@@ -40,22 +40,22 @@ ________________________________________________________________________________
 
 // --------------------1) Create a function that takes in any given number and determines if the number is below boiling point, at boiling point, or above boiling point. Boiling point is 212 degrees Fahrenheit. Use the test variables provided below. Expected output: "42 is below boiling point", "350 is above boiling point", "212 is at boiling point"
 
-// const temp1 = 42
-// const temp2 = 350
-// const temp3 = 212
+const temp1 = 42
+const temp2 = 350
+const temp3 = 212
 
-// const boilPoint = (userTemp) => {
-//     if(userTemp === 212 ){
-//         return `${userTemp} is at boiling point`
-//     }else if(userTemp < 212){
-//         return `${userTemp} is below boiling point`
-//     }else if(userTemp > 212){
-//         return `${userTemp} is above boiling point`
-//     }
-// }
-// console.log(boilPoint(temp1))
-// console.log(boilPoint(temp2))
-// console.log(boilPoint(450))
+const boilPoint = (userTemp) => {
+    if(userTemp === 212 ){
+        return `${userTemp} is at boiling point`
+    }else if(userTemp < 212){
+        return `${userTemp} is below boiling point`
+    }else if(userTemp > 212){
+        return `${userTemp} is above boiling point`
+    }
+}
+console.log(boilPoint(temp1))
+console.log(boilPoint(temp2))
+console.log(boilPoint(450))
 
 /*
 
@@ -72,14 +72,16 @@ ________________________________________________________________________________
 
 // --------------------2) Create the code that will combine the two arrays and return the length using the variables provided below. Expected output: 10
 
-// const myNumbers1 = [3, 7, 0, 36, -9]
-// const myNumbers2 = [8, -7, 42, 9, 13]
+const myNumbers1 = [3, 7, 0, 36, -9]
+const myNumbers2 = [8, -7, 42, 9, 13]
 
-// const combinedArray = (arr1,arr2) => {
-//     return arr1.length + arr2.length
-// }
-// console.log(combinedArray(myNumbers1,myNumbers2))
-// console.log(combinedArray(myNumbers2,myNumbers1))
+const combinedArray = (arr1,arr2) => {
+    return arr1.length + arr2.length
+}
+console.log(combinedArray(myNumbers1,myNumbers2))
+console.log(combinedArray(myNumbers2,myNumbers1))
+console.log(combinedArray([3,4,23,44],[33,22,43,423,4]))
+
 
  /*
 
@@ -104,11 +106,11 @@ const currentCohort = "Bravo 2022"
 // console.log(revString)
 
 // Attempt #2
-// const reverseInput = (strInput) => {
-//     return `${strInput.split("").reverse().join("")}`
-// }
-// console.log(reverseInput("Charlie 2022"))
-// console.log(reverseInput(currentCohort))
+const reverseInput = (strInput) => {
+    return `${strInput.split("").reverse().join("")}`
+}
+console.log(reverseInput("Charlie 2022"))
+console.log(reverseInput(currentCohort))
 
 /*
 1. Create function that takes a string and returns the input reversed 
@@ -134,17 +136,17 @@ const myArray = [13, 34, 5, 10, 27, 42]
 //   }
 
 // Attempt #2: Function return the expected result but one undefined as well. *** I will ask about this later ***
-// const arrInput = (inputArray) => {
-// for(let i =0; i < inputArray.length; i++){
-//     if(inputArray[i] % 2 === 0){
-//        console.log("even")
-//    }else if(inputArray[i] % 2 !==0 ){
-//          console.log("odd")
-//    }
-// }
-// }
-// console.log(arrInput(myArray))
-// console.log(arrInput([2,31,33,45,66,80]))
+const arrInput = (inputArray) => {
+for(let i =0; i < inputArray.length; i++){
+    if(inputArray[i] % 2 === 0){
+       return "even"
+   }else if(inputArray[i] % 2 !==0 ){
+        return "odd"
+   }
+}
+}
+console.log(arrInput(myArray))
+console.log(arrInput([2,31,33,45,66,80]))
 
 /*
 1. Create a statement that will evaluate whether each number in an array is even or odd 
@@ -168,18 +170,18 @@ const number2 = 100
 const number3 = 27
 const number4 = 24
 
-    // const takeDifference = (num1,num2) => {
-    //     if(num1 > num2){
-    //         return `${num1 - num2}`
-    //     }else if(num2 > num1){
-    //         return `${num2 - num1}`
-    //     }else{
-    //         return `invalid entry please try again`
-    //     }
-    // }
-    // console.log(takeDifference(number2,number1))
-    // console.log(takeDifference(number4,number2))
-    // console.log(takeDifference(number3,number4))
+    const takeDifference = (num1,num2) => {
+        if(num1 > num2){
+            return `${num1 - num2}`
+        }else if(num2 > num1){
+            return `${num2 - num1}`
+        }else{
+            return `invalid entry please try again`
+        }
+    }
+    console.log(takeDifference(number2,number1))
+    console.log(takeDifference(number4,number2))
+    console.log(takeDifference(number3,number4))
 
 /*
 
